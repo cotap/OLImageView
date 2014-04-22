@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Onda. All rights reserved.
 //
 
+#import <ImageIO/ImageIO.h>
 #import <UIKit/UIKit.h>
 
 @interface OLImage : UIImage
@@ -15,8 +16,13 @@
 ///-----------------------
 
 /**
+The underlying source data.
+*/
+@property (nonatomic, readonly) CGImageSourceRef imageSource;
+
+/**
  A C array containing the frame durations.
- 
+
  The number of frames is defined by the count of the `images` array property.
  */
 @property (nonatomic, readonly) NSTimeInterval *frameDurations;

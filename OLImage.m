@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Onda. All rights reserved.
 //
 
-#import <ImageIO/ImageIO.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "OLImage.h"
 
@@ -183,8 +182,10 @@ inline static BOOL isRetinaFilePath(NSString *path)
         self.frameDurations[i] = frameDuration;
         self.totalDuration += frameDuration;
     }
-    self.imageSourceArray = [OLImageSourceArray arrayWithImageSource:imageSource scale:scale];
-    
+
+    _imageSource      = imageSource;
+    _imageSourceArray = [OLImageSourceArray arrayWithImageSource:imageSource scale:scale];
+
     return self;
 }
 
