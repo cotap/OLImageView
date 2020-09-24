@@ -211,6 +211,7 @@ break
 - (void)displayLayer:(CALayer *)layer
 {
     if (!self.animatedImage || [self.animatedImage.images count] == 0) {
+        [super displayLayer:layer];
         return;
     }
     layer.contents = (__bridge id)([[self.animatedImage.images objectAtIndex:self.currentFrameIndex] CGImage]);

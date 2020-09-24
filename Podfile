@@ -1,3 +1,7 @@
-platform :ios, "7.0"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+use_frameworks!
 
-pod "AFNetworking/UIKit"
+target 'OLImageViewDemo' do
+  pod "AFNetworking/UIKit"
+end

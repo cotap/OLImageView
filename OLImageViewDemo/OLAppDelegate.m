@@ -9,8 +9,7 @@
 #import "OLAppDelegate.h"
 #import "OLImageView.h"
 #import "OLImage.h"
-
-#import <AFNetworking/UIImageView+AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
 #import "OLImageResponseSerializer.h"
 #import "OLImageStrictResponseSerializer.h"
 
@@ -35,10 +34,17 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    CGSize size = self.window.bounds.size;
+    
     UIViewController *normalAnimatedVC = [UIViewController new];
     normalAnimatedVC.title = @"UIImageView";
     UIImageView *imv = [[UIImageView alloc] initWithImage:[UIImage animatedImageNamed:@"BB" duration:1.6]];
-    normalAnimatedVC.view = imv;
+    imv.frame = CGRectMake(0, 0, size.width, size.height/2);
+    [normalAnimatedVC.view addSubview:imv];
+    
+    UIImageView *imvJ = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"interesting.jpg"]];
+    imvJ.frame = CGRectMake(0, size.height/2, size.width, size.height/2);
+    [normalAnimatedVC.view addSubview:imvJ];
     
     UIViewController *magicAnimatedVC = [UIViewController new];
     magicAnimatedVC.title = @"OLImageView";
@@ -68,6 +74,10 @@
     [Aimv addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)]];
     [magicAnimatedVC.view addSubview:Aimv];
     
+    OLImageView *AimvJ = [[OLImageView alloc] initWithImage:[OLImage imageNamed:@"interesting.jpg"]];
+    AimvJ.frame = CGRectMake(0, 320, size.width, size.height/2);
+    [magicAnimatedVC.view addSubview:AimvJ];
+    
 #if OLDemoShowAnimationTickers
     // GIFs from http://blog.fenrir-inc.com/us/2012/02/theyre-different-how-to-match-the-animation-rate-of-gif-files-accross-browsers.html
     for (NSUInteger i = 1; i <= 10; i++) {
@@ -81,7 +91,10 @@
     UIViewController *magicAnimatedVCnet = [UIViewController new];
     magicAnimatedVCnet.title = @"OLImageView+AFNet2";
     UIImageView *imgV = [UIImageView new];
-    imgV.imageResponseSerializer = [OLImageResponseSerializer new];
+    AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    sessionManager.responseSerializer = [OLImageResponseSerializer new];
+    AFImageDownloader *downloader = [[AFImageDownloader alloc] initWithSessionManager:sessionManager downloadPrioritization:AFImageDownloadPrioritizationFIFO maximumActiveDownloads:3 imageCache:[[AFAutoPurgingImageCache alloc] init]];
+    [UIImageView setSharedImageDownloader:downloader];
     imgV.frame = CGRectMake(0, 0, 320, 240);
     [magicAnimatedVCnet.view addSubview:imgV];
     
@@ -89,8 +102,11 @@
     [imgV setImageWithURL:[NSURL URLWithString:@"http://24.media.tumblr.com/9a7e2652afde1fbe7b1d2e978be64765/tumblr_mke4w2g7C31qz8x31o1_400.gif"]];
     
     imgV = [UIImageView new];
-    AFCompoundResponseSerializer *compoundSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[OLImageStrictResponseSerializer new], imgV.imageResponseSerializer]];
-    imgV.imageResponseSerializer = compoundSerializer;
+    AFCompoundResponseSerializer *compoundSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[OLImageStrictResponseSerializer new], [OLImageResponseSerializer new]]];
+    sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    sessionManager.responseSerializer = compoundSerializer;
+    downloader = [[AFImageDownloader alloc] initWithSessionManager:sessionManager downloadPrioritization:AFImageDownloadPrioritizationFIFO maximumActiveDownloads:3 imageCache:[[AFAutoPurgingImageCache alloc] init]];
+    [UIImageView setSharedImageDownloader:downloader];
     imgV.frame = CGRectMake(0, 240, 320, 240);
     [magicAnimatedVCnet.view addSubview:imgV];
     

@@ -54,8 +54,9 @@
 		5AEC556319D5E6E200EE94E5 /* google-io.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC556019D5E6E200EE94E5 /* google-io.gif */; };
 		5AEC556419D5E6E200EE94E5 /* google-io@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC556119D5E6E200EE94E5 /* google-io@2x.gif */; };
 		5AEC556519D5E6E200EE94E5 /* google-io@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC556219D5E6E200EE94E5 /* google-io@3x.gif */; };
+		5BBE7EA1507BC70F1C358AE7 /* Pods_OLImageViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E817E2CD8E754312E4C6B /* Pods_OLImageViewDemo.framework */; };
 		9CFBBE94194EE9D100DBE3AE /* OLImageStrictResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBBE93194EE9D100DBE3AE /* OLImageStrictResponseSerializer.m */; };
-		F2B924CC4DF949A082919C1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B873DBE54D4E0AB5CC12D3 /* libPods.a */; };
+		C493F97F251C499B00B872FD /* interesting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C493F97E251C499B00B872FD /* interesting.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +72,6 @@
 		07BB9C5E170696E800E68171 /* 10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10.gif; sourceTree = "<group>"; };
 		07CCC8E8170524130062371E /* AFImageRequestOperation+OLImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AFImageRequestOperation+OLImage.h"; path = "Categories/AFImageRequestOperation+OLImage.h"; sourceTree = SOURCE_ROOT; };
 		07CCC8E9170524130062371E /* AFImageRequestOperation+OLImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AFImageRequestOperation+OLImage.m"; path = "Categories/AFImageRequestOperation+OLImage.m"; sourceTree = SOURCE_ROOT; };
-		4A4DE572700BF683548BC30C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5A053BE115F844060014BF82 /* BLEH.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BLEH.gif; sourceTree = "<group>"; };
 		5A1F4BB9165C449E00B61FCF /* OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImage.h; sourceTree = SOURCE_ROOT; };
 		5A1F4BBA165C449E00B61FCF /* OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImage.m; sourceTree = SOURCE_ROOT; };
@@ -116,11 +116,13 @@
 		5AEC556019D5E6E200EE94E5 /* google-io.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "google-io.gif"; sourceTree = "<group>"; };
 		5AEC556119D5E6E200EE94E5 /* google-io@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "google-io@2x.gif"; sourceTree = "<group>"; };
 		5AEC556219D5E6E200EE94E5 /* google-io@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "google-io@3x.gif"; sourceTree = "<group>"; };
+		88D3117BB6771ABD3C33D3D1 /* Pods-OLImageViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLImageViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-OLImageViewDemo/Pods-OLImageViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9CFBBE92194EE9D100DBE3AE /* OLImageStrictResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImageStrictResponseSerializer.h; sourceTree = "<group>"; };
 		9CFBBE93194EE9D100DBE3AE /* OLImageStrictResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImageStrictResponseSerializer.m; sourceTree = "<group>"; };
-		AEBC80445A15EBABE31A94E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B1923B3EEBE372CD94229E11 /* Pods-OLImageViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLImageViewDemo.release.xcconfig"; path = "Target Support Files/Pods-OLImageViewDemo/Pods-OLImageViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C493F97E251C499B00B872FD /* interesting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = interesting.jpg; path = ../../../../Downloads/interesting.jpg; sourceTree = "<group>"; };
 		CCF677081AE044F800A367EF /* OLImageViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLImageViewDelegate.h; sourceTree = SOURCE_ROOT; };
-		D8B873DBE54D4E0AB5CC12D3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9E817E2CD8E754312E4C6B /* Pods_OLImageViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLImageViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,7 @@
 				5A796D0215F79EC7008A8FBF /* UIKit.framework in Frameworks */,
 				5A796D0415F79EC7008A8FBF /* Foundation.framework in Frameworks */,
 				5A796D0615F79EC7008A8FBF /* CoreGraphics.framework in Frameworks */,
-				F2B924CC4DF949A082919C1A /* libPods.a in Frameworks */,
+				5BBE7EA1507BC70F1C358AE7 /* Pods_OLImageViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,7 @@
 		07BB9C361706809C00E68171 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C493F97E251C499B00B872FD /* interesting.jpg */,
 				5AEC556019D5E6E200EE94E5 /* google-io.gif */,
 				5AEC556119D5E6E200EE94E5 /* google-io@2x.gif */,
 				5AEC556219D5E6E200EE94E5 /* google-io@3x.gif */,
@@ -198,6 +201,15 @@
 			path = OLImageViewDemo;
 			sourceTree = "<group>";
 		};
+		17438C0F3C113A9EF87EA844 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88D3117BB6771ABD3C33D3D1 /* Pods-OLImageViewDemo.debug.xcconfig */,
+				B1923B3EEBE372CD94229E11 /* Pods-OLImageViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5A796CF215F79EC7008A8FBF = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +218,7 @@
 				5A796D0715F79EC7008A8FBF /* OLImageViewDemo */,
 				5A796D0015F79EC7008A8FBF /* Frameworks */,
 				5A796CFE15F79EC7008A8FBF /* Products */,
-				CC174B41C3D1D9A892201DF2 /* Pods */,
+				17438C0F3C113A9EF87EA844 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,7 +239,7 @@
 				5A796D0115F79EC7008A8FBF /* UIKit.framework */,
 				5A796D0315F79EC7008A8FBF /* Foundation.framework */,
 				5A796D0515F79EC7008A8FBF /* CoreGraphics.framework */,
-				D8B873DBE54D4E0AB5CC12D3 /* libPods.a */,
+				CE9E817E2CD8E754312E4C6B /* Pods_OLImageViewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,15 +277,6 @@
 			path = AFNetworking;
 			sourceTree = SOURCE_ROOT;
 		};
-		CC174B41C3D1D9A892201DF2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC80445A15EBABE31A94E8 /* Pods.debug.xcconfig */,
-				4A4DE572700BF683548BC30C /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,11 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A796D1515F79EC8008A8FBF /* Build configuration list for PBXNativeTarget "OLImageViewDemo" */;
 			buildPhases = (
-				0E63FB56DF2A4928818EC1E9 /* Check Pods Manifest.lock */,
+				88A6DB090515050D62C13E09 /* [CP] Check Pods Manifest.lock */,
 				5A796CF915F79EC7008A8FBF /* Sources */,
 				5A796CFA15F79EC7008A8FBF /* Frameworks */,
 				5A796CFB15F79EC7008A8FBF /* Resources */,
-				1EAA632824374C8989B9ABE2 /* Copy Pods Resources */,
+				B40BE15321AB74F72DC94ED0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +314,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 5A796CF215F79EC7008A8FBF;
@@ -346,6 +350,7 @@
 				5A796D4115F7ABD9008A8FBF /* BB13.png in Resources */,
 				5A796D4215F7ABD9008A8FBF /* BB14.png in Resources */,
 				5A796D4315F7ABD9008A8FBF /* BB15.png in Resources */,
+				C493F97F251C499B00B872FD /* interesting.jpg in Resources */,
 				5A796D4415F7ABD9008A8FBF /* BB16.png in Resources */,
 				5A796D4615F7AC61008A8FBF /* AA.gif in Resources */,
 				5A796D5015F7B077008A8FBF /* BB0.png in Resources */,
@@ -370,34 +375,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E63FB56DF2A4928818EC1E9 /* Check Pods Manifest.lock */ = {
+		88A6DB090515050D62C13E09 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OLImageViewDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1EAA632824374C8989B9ABE2 /* Copy Pods Resources */ = {
+		B40BE15321AB74F72DC94ED0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OLImageViewDemo/Pods-OLImageViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OLImageViewDemo/Pods-OLImageViewDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -502,7 +517,7 @@
 		};
 		5A796D1615F79EC8008A8FBF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEBC80445A15EBABE31A94E8 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 88D3117BB6771ABD3C33D3D1 /* Pods-OLImageViewDemo.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OLImageViewDemo/OLImageViewDemo-Prefix.pch";
@@ -514,7 +529,7 @@
 		};
 		5A796D1715F79EC8008A8FBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A4DE572700BF683548BC30C /* Pods.release.xcconfig */;
+			baseConfigurationReference = B1923B3EEBE372CD94229E11 /* Pods-OLImageViewDemo.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OLImageViewDemo/OLImageViewDemo-Prefix.pch";
